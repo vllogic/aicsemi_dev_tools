@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<optionMenuItem>
+  <tag>AIC8800MC</tag>
+  <display>AICSemi AIC8800MC</display>
+  <data>$CUR_DIR$\AIC8800MC.i79</data>
+</optionMenuItem>

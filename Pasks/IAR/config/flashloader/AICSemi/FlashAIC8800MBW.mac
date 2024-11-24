@@ -1,0 +1,24 @@
+execUserFlashInit()
+{
+    __message"----- execUserFlashInit -----";
+}
+
+execUserFlashReset()
+{
+    __message"----- execUserFlashReset -----";
+}
+
+execUserCoreConnect()
+{
+    /* __message"----- execUserCoreConnect -----"; */
+}
+
+execUserPreload()
+{
+    /* __message"----- execUserPreload -----"; */
+}
+
+execUserPreReset()
+{
+    /* __message"----- execUserPreReset -----"; */
+}

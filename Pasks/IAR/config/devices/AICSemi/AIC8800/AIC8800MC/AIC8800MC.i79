@@ -1,0 +1,28 @@
+[FILEFORMAT]
+rev=1.6
+
+[CHIP]
+name=AIC8800MC
+endiansupport=le
+thumbsupport=true
+armsupport=false
+fpu=VFPv4
+SIMD=false
+
+//DeviceMacros=$TOOLKIT_DIR$\config\debugger\AICSemi\AIC8800MC.dmac
+
+JTAG=false
+SWD=true
+SWO_TraceD0=false
+
+[CORE]
+name=Cortex-M4
+
+[DDF FILE]
+name=AICSemi\AIC8800MC.ddf
+
+[LINKER FILE]
+name=$TOOLKIT_DIR$\config\linker\AICSemi\AIC8800MC.icf
+
+[FLASH LOADER]
+little=$TOOLKIT_DIR$\config\flashloader\AICSemi\FlashAIC8800MC.board
