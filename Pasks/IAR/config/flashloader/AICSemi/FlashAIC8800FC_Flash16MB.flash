@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<flash_device>
+  <exe>$TOOLKIT_DIR$\config\flashloader\AICSemi\FlashAIC8800MC.out</exe>
+  <page>256</page>
+  <block>4096 0x1000</block>
+  <flash_base>0x08000000</flash_base>
+  <macro>$TOOLKIT_DIR$\config\flashloader\AICSemi\FlashAIC8800MC.mac</macro>
+  <aggregate>1</aggregate>
+</flash_device>
