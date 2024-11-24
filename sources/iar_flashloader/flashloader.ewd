@@ -2,7 +2,7 @@
 <project>
     <fileVersion>3</fileVersion>
     <configuration>
-        <name>aic8800mbw</name>
+        <name>AIC8800MBW</name>
         <toolchain>
             <name>ARM</name>
         </toolchain>
@@ -1487,7 +1487,7 @@
         </debuggerPlugins>
     </configuration>
     <configuration>
-        <name>aic8800mc</name>
+        <name>AIC8800MC</name>
         <toolchain>
             <name>ARM</name>
         </toolchain>

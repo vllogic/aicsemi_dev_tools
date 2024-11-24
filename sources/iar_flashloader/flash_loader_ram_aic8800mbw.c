@@ -53,7 +53,7 @@ uint32_t FlashInit(void *base_of_flash, uint32_t image_size,
 //    perform full erase
 //    return RESULT_ERASE_DONE;
 //  }
-  return RESULT_OK;
+    return RESULT_OK;
 }
 
 uint32_t FlashWrite(void *block_start,
@@ -61,23 +61,21 @@ uint32_t FlashWrite(void *block_start,
                     uint32_t count,
                     char const *buffer)
 {
-  char *to = (char*)block_start + offset_into_block;
-  while (count--)
-  {
-    *to++ = *buffer++;
-  }
-  return 0;
+    unsigned int adr;
+    unsigned int len;
+    unsigned int buf;
+    adr = (uint32_t)block_start + offset_into_block;
+    len = count;
+    buf = (uint32_t)buffer;
+    ROM_FlashWrite(adr, len, buf);
+    return 0;
 }
 
 uint32_t FlashErase(void *block_start,
                     uint32_t block_size)
 {
-  char *p = (char*)block_start;
-  while (block_size--)
-  {
-    *p++ = 0;
-  }
-  return 0;
+    ROM_FlashErase((uint32_t)block_start, block_size);
+    return 0;
 }
 
 OPTIONAL_CHECKSUM
@@ -96,6 +94,4 @@ void strcopy(char *to, char* from)
 {
   while (*to++ = *from++) ;
 }
-
-
 
