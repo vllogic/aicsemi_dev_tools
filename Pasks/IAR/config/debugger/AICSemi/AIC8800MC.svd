@@ -26,6 +26,115 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <resetMask>0xFFFFFFFF</resetMask>
   <peripherals>
     <peripheral>
+      <name>GPIOA</name>
+      <description>General Purpose Input/Output</description>
+      <groupName>GPIO</groupName>
+      <baseAddress>0x4010B000</baseAddress>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x30</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <name>VR</name>
+          <displayName>VR</displayName>
+          <description>Val Register</description>
+          <addressOffset>0x000</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>MR</name>
+          <displayName>MR</displayName>
+          <description>Msk Register</description>
+          <addressOffset>0x004</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>DR</name>
+          <displayName>DR</displayName>
+          <description>Dir Register</description>
+          <addressOffset>0x008</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>TELR</name>
+          <displayName>TELR</displayName>
+          <description>Trig Edg or Lvl Reg</description>
+          <addressOffset>0x00C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>TER</name>
+          <displayName>TER</displayName>
+          <description>Trig Edg Reg</description>
+          <addressOffset>0x010</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>TLR</name>
+          <displayName>TLR</displayName>
+          <description>Trig Lvl Reg</description>
+          <addressOffset>0x014</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>ICR</name>
+          <displayName>ICR</displayName>
+          <description>Int Ctrl Reg</description>
+          <addressOffset>0x018</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>RISR</name>
+          <displayName>RISR</displayName>
+          <description>Raw Interrupt Status Reg</description>
+          <addressOffset>0x01C</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>ISR</name>
+          <displayName>ISR</displayName>
+          <description>Int Stat Reg</description>
+          <addressOffset>0x020</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>IRR</name>
+          <displayName>IRR</displayName>
+          <description>Int Rm Reg</description>
+          <addressOffset>0x024</addressOffset>
+          <size>0x20</size>
+          <access>write-only</access>
+        </register>
+        <register>
+          <name>TIR</name>
+          <displayName>TIR</displayName>
+          <description>Trig In Reg</description>
+          <addressOffset>0x028</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>FR</name>
+          <displayName>FR</displayName>
+          <description>Fltr Reg</description>
+          <addressOffset>0x02C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+      </registers>
+    </peripheral>
+    <peripheral>
       <name>MPU</name>
       <description>Memory protection unit</description>
       <groupName>MPU</groupName>
