@@ -68,6 +68,7 @@ uint32_t FlashWrite(void *block_start,
     len = count;
     buf = (uint32_t)buffer;
     ROM_FlashWrite(adr, len, buf);
+    ROM_FlashCacheInvalidRange((uint32_t)adr, len);
     return 0;
 }
 
@@ -75,6 +76,7 @@ uint32_t FlashErase(void *block_start,
                     uint32_t block_size)
 {
     ROM_FlashErase((uint32_t)block_start, block_size);
+    ROM_FlashCacheInvalidRange((uint32_t)block_start, block_size);
     return 0;
 }
 
