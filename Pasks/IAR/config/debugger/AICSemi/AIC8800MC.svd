@@ -135,6 +135,229 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
       </registers>
     </peripheral>
     <peripheral>
+      <name>SPI0</name>
+      <description>SPI0</description>
+      <groupName>SPI</groupName>
+      <baseAddress>0x40105000</baseAddress>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x68</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <name>IOR</name>
+          <displayName>IOR</displayName>
+          <description>In/Out Reg</description>
+          <addressOffset>0x000</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>DR</name>
+          <displayName>DR</displayName>
+          <description>Div Reg</description>
+          <addressOffset>0x004</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>CR0</name>
+          <displayName>CR0</displayName>
+          <description>Cfg Reg</description>
+          <addressOffset>0x008</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>CR1</name>
+          <displayName>CR1</displayName>
+          <description>Cfg Reg</description>
+          <addressOffset>0x00C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>CR2</name>
+          <displayName>CR2</displayName>
+          <description>Cfg Reg</description>
+          <addressOffset>0x010</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>CR3</name>
+          <displayName>CR3</displayName>
+          <description>Cfg Reg</description>
+          <addressOffset>0x014</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>CR4</name>
+          <displayName>CR4</displayName>
+          <description>Cfg Reg</description>
+          <addressOffset>0x018</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>CR5</name>
+          <displayName>CR5</displayName>
+          <description>Cfg Reg</description>
+          <addressOffset>0x01C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>IER</name>
+          <displayName>IER</displayName>
+          <description>Int En Reg</description>
+          <addressOffset>0x020</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>ICLR</name>
+          <displayName>ICLR</displayName>
+          <description>Int Clr Reg</description>
+          <addressOffset>0x024</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>IRSR</name>
+          <displayName>IRSR</displayName>
+          <description>Int Raw Stat Reg</description>
+          <addressOffset>0x028</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>IMSR</name>
+          <displayName>IMSR</displayName>
+          <description>Int Msk Stat Reg</description>
+          <addressOffset>0x02C</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>RESERVED0</name>
+          <displayName>RESERVED0</displayName>
+          <description>Reserved</description>
+          <addressOffset>0x030</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>SR</name>
+          <displayName>SR</displayName>
+          <description>Stat Reg</description>
+          <addressOffset>0x034</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>RESERVED1_0</name>
+          <displayName>RESERVED1_0</displayName>
+          <description>Reserved</description>
+          <addressOffset>0x038</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>RESERVED1_1</name>
+          <displayName>RESERVED1_1</displayName>
+          <description>Reserved</description>
+          <addressOffset>0x03C</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>OFCR</name>
+          <displayName>OFCR</displayName>
+          <description>Out FIFO Cfg Reg</description>
+          <addressOffset>0x040</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>OFAR</name>
+          <displayName>OFAR</displayName>
+          <description>Out FIFO r/w Addr Reg</description>
+          <addressOffset>0x044</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>IOFCR</name>
+          <displayName>IOFCR</displayName>
+          <description>In/Out FIFO Cfg Reg</description>
+          <addressOffset>0x048</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>MR0</name>
+          <displayName>MR0</displayName>
+          <description>Mode Reg 0</description>
+          <addressOffset>0x04C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>RESERVED2</name>
+          <displayName>RESERVED2</displayName>
+          <description>Reserved</description>
+          <addressOffset>0x050</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>MR1</name>
+          <displayName>MR1</displayName>
+          <description>Mode Reg 1</description>
+          <addressOffset>0x054</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>OCR</name>
+          <displayName>OCR</displayName>
+          <description>Out Cnt Reg</description>
+          <addressOffset>0x058</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>RESERVED3</name>
+          <displayName>RESERVED3</displayName>
+          <description>Reserved</description>
+          <addressOffset>0x060</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>ICR</name>
+          <displayName>ICR</displayName>
+          <description>In Cnt Reg</description>
+          <addressOffset>0x064</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+        <register>
+          <name>TCR</name>
+          <displayName>TCR</displayName>
+          <description>Trans Ctrl Reg</description>
+          <addressOffset>0x06C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+        </register>
+      </registers>
+    </peripheral>
+
+
+    <peripheral>
       <name>MPU</name>
       <description>Memory protection unit</description>
       <groupName>MPU</groupName>
